@@ -11,12 +11,12 @@ let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-  if(showMenu) {
+  if(!showMenu) {
     menuBtn.classList.add('close');
     menu.classList.add('show');
     menuNav.classList.add('show');
     menuBranding.classList.add('show');
-    navItems.forEach(item => item,classList.add('show'));
+    navItems.forEach(item => item.classList.add('show'));
 
     // reset the menu state
     showMenu = true;
