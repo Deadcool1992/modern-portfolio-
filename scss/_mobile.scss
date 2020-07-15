@@ -20,8 +20,8 @@
     }
   }
 
-  ul.manu-nac, 
-  div.menu-branding{
+  ul.menu-nav, 
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
@@ -41,11 +41,22 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0);
 
-    .portraint {
-      background: url(../dist/img/portrait_small.jpg);
+    .portrait {
+      background: url(../img/portrait_small.jpg);
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+    'bioimage'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+
+    grid-template-columns: 1fr;
   }
 }
 
